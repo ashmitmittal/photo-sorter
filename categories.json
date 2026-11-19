@@ -1,0 +1,9 @@
+[
+  { "name": "Mountains", "hint": "Landscapes and nature as the subject: mountains, valleys, rivers, beaches, forests, trails, sky, sunsets. People absent or small." },
+  { "name": "Group photos", "hint": "Three or more people, or two people photographed by someone else." },
+  { "name": "Selfies", "hint": "Front-camera or arm's-length shots of one or two people with faces close to the camera." },
+  { "name": "Food", "hint": "Meals, drinks, snacks, cafe tables, cooking." },
+  { "name": "Roads & drives", "hint": "Roads, highways, vehicles, bus, train or car interiors, views from a moving vehicle, stops on the way." },
+  { "name": "Stays", "hint": "Hotels, hostels, homes, camps, tents, rooms, cafes and buildings, night hangouts." },
+  { "name": "Screenshots", "hint": "Phone screenshots or screen captures: maps, tickets, chats, payments, documents." }
+]

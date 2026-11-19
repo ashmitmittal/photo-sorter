@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Personal data: previews, labels, fixes and results (root data/ only; lib/data/ is part of the app)
+/data/
+
+# Sorted output folders, wherever they are
+Sorted/
+
+# Secrets
+.env
+.env.*
+
+# OS and editor junk
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+*.log
+.vscode/
+.idea/

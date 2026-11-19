@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Sorter</title>
+  <meta name="description" content="Sort your photos locally by type, day and place, with best shots, duplicates and easy fixes.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/app.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#/">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><path d="m14 17.2 2.2 2.2 4.3-4.6"/></svg></span>
+        Photo Sorter
+      </a>
+      <nav class="nav">
+        <a href="#/" data-nav="sort">Sort</a>
+        <a href="#/results" data-nav="results">Results</a>
+      </nav>
+      <div class="topbar-right">
+        <button class="pv-toggle" id="privacyBtn" role="switch" aria-checked="true">
+          <span class="pv-ic"></span><span class="pv-label">Photos shown</span><span class="pv-switch" aria-hidden="true"><span></span></span>
+        </button>
+        <span class="pill subtle"><span class="dot"></span>Local</span>
+        <button class="icon-btn" id="themeBtn" aria-label="Switch light or dark theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="view"></main>
+
+  <footer class="container footer">
+    <span>Runs only on this computer. Originals are never changed.</span>
+    <span id="version"></span>
+  </footer>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
